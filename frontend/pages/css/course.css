@@ -1,0 +1,176 @@
+:root {
+    --primary-color: #3347B0;
+    --secondary-color: #BCC2E5;
+    --yellow-color: #E5B657;
+}
+
+
+
+body{
+    display: grid;
+    grid-template-rows: 100px 1fr 140px;
+    grid-template-areas: 
+    'header',
+    'main',
+    'footer';
+    height: 100vh;
+    width: 100%;
+}
+
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--primary-color);
+    grid-area: header;
+}
+
+main {
+    display: grid;
+    place-items: center;    
+    grid-area: main;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1rem;
+    grid-area: footer;
+}
+
+.course-container {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+select {
+    background: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+select option {
+    display: flex;
+    color: white;
+    font-size: 1.5rem;
+    background-color: var(--primary-color);
+}
+
+
+
+footer p a:hover {
+    font-style: oblique;
+}
+
+.status-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--secondary-color);
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    height: 80px;
+    width: 100%;
+
+}
+
+.status {
+    display: flex;
+    align-items: center;
+}
+
+.subtitle {
+    display: flex;
+    gap: 2.4rem;
+}
+
+.subtitle-container {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.block {
+    width: 20px;
+    height: 20px;
+}
+
+.blue-block {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.580);
+    background-color: var(--primary-color);
+}
+
+.yellow-block {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.735);
+    background-color: var(--yellow-color);
+}
+
+.title-course {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    padding: 2rem;
+}
+
+/* container dos cards dos alunos */
+.container-students {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    text-align: center;
+    height: 100%;
+    cursor: pointer;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+
+}
+
+.students__finished {
+    display: flex;
+    width: 200px;
+    height: 300px;
+    flex-direction: column;
+    background-color: var(--yellow-color);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.749);
+}
+
+.students__studying {
+    display: flex;
+    width: 200px;
+    height: 300px;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.749);
+}
+
+.students__name {
+    display: flex;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+}
+
+.students__image {
+    display: flex;
+    width: 200px;
+    height: 200px;
+}

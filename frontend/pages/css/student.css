@@ -1,0 +1,96 @@
+:root{
+    --primary-color:  #3347B0;
+}
+
+html, body{
+    display: flex;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+
+header{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--primary-color);
+    height: 15%;
+}
+
+main{
+    display: flex;
+    height: 70%;
+    align-items: center;
+    justify-content: center;
+}
+
+.student-container{
+    height: 100%;
+    width: 100%;
+}
+
+footer{
+    display: flex; 
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--primary-color);
+    height: 15%;
+    color: white;
+    font-size: 1rem;
+}
+
+footer p a:hover {
+    font-style: oblique;
+}
+
+.chart-area{
+    width: 500px; 
+    height: 400px;
+    display: flex;
+}
+
+.informations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 150px;
+    height: 400px;
+}
+
+.student-profile {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    height: 100%;
+    border-radius: 53px;
+    background-color: white ;
+    box-shadow: 20px 20px 35px #8b8b8b, -20px -20px 35px #ffffff;
+}
+
+.student-image{
+    display: flex;
+    width: 350px;
+    height: 350px;
+}
+
+.student-name{
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--primary-color);
+}
+
+
+@media (max-width:960px){
+
+}
+
+@media (max-width: 640px){
+    
+}

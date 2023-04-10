@@ -1,0 +1,41 @@
+.logout{
+    display: flex;
+    gap: 12px;
+    flex-direction: row-reverse;
+    align-items: center; 
+}
+.logout__image{
+    display: flex; 
+    width: 48px;
+    height: 42.67px; 
+    flex-direction: row-reverse;
+}
+.logout__name{
+    display: flex;
+    color: white;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 42.19px;
+}
+
+@media (max-width:960px){
+
+    .logout{
+        gap: 10px;
+    }
+    .logout__image{
+        width: 42px;
+        height: 38.67px;
+        margin-top: 10px;
+    }
+    .logout__name{
+        font-size: 28px;
+        margin-top: 12px;
+    }
+}
+
+@media (max-width: 640px){
+    .logout__name{
+     display: none;
+    }
+}
