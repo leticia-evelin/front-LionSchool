@@ -1,5 +1,9 @@
 @media (max-width:960px) {
 
+    body {
+        width: 100h;
+    }
+
     .status-container {
         padding: 1.3rem 4rem;
         font-size: 1.2rem;
@@ -138,12 +142,14 @@
 
     .social {
         gap: 0.8rem;
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .social-icon {
-        padding: 2rem;
-        font-size: 2rem;
+        height: 18px;
+        width: 18px;
+        padding: 1.3rem;
+        font-size: 1.3rem;
     }
 
     .contact-info {
